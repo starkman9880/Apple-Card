@@ -1,0 +1,2237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <title>Apple Card</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        background-color: #f2f2f2;
+      }
+      strong {
+        font-weight: 600;
+      }
+      a,
+      a.appl-link,
+      a.appl-link:link {
+        text-decoration: none;
+      }
+      a.appl-link:hover,
+      a:hover {
+        text-decoration: underline !important;
+      }
+      a.appl_button,
+      a.appl_button {
+        text-decoration: none !important;
+      }
+      a.appl_button:hover {
+        text-decoration: none !important;
+      }
+      .appl_lowbrow a,
+      #appl-footer a,
+      a {
+        color: inherit;
+      }
+      span {
+        font-family: inherit !important;
+        font-size: inherit !important;
+        line-height: inherit !important;
+      }
+      @media only screen and (max-device-width: 768px) {
+        .appl_lowbrow,
+        #appl-footer {
+          -webkit-text-size-adjust: 100%;
+        }
+        .appl_lowbrow a,
+        #appl-footer a,
+        a {
+          color: inherit;
+        }
+      }
+      * {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-rendering: optimizelegibility;
+        -webkit-font-smoothing: antialiased;
+      }
+      @media only screen and (min-device-width: 768px) {
+        /* thai copy bug fix*/
+        td.appl_app_title * {
+          max-width: 204px !important;
+        }
+      }
+    </style>
+    <style type="text/css">
+      /* Mobile Styles */
+      @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+        .appl_desktop {
+          display: none !important;
+        }
+        * div.appl_mobile {
+          height: auto !important;
+          display: block !important;
+          max-height: none !important;
+          line-height: 100% !important;
+          overflow: visible !important;
+          width: auto !important;
+          max-width: none !important;
+          background-color: #fff !important;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+          max-width: 414px !important;
+          margin: 0 auto;
+        }
+        div.appl_mobile * {
+          box-sizing: border-box;
+          text-align: center;
+          -webkit-text-size-adjust: 100%;
+        }
+        div.appl_mobile .appl_div {
+          width: 100%;
+          margin: 0 auto;
+          padding: 0 20px;
+          text-rendering: optimizelegibility;
+        }
+        div.appl_mobile .appl_left,
+        div.appl_mobile .appl_left * {
+          text-align: left !important;
+        }
+        div.appl_mobile br.appl_desktop {
+          display: none;
+        }
+        div.appl_mobile .appl_100 {
+          padding: 0;
+        }
+        div.appl_mobile .appl_pad {
+          width: 100%;
+          padding: 0 20px;
+        }
+        div.appl_mobile img {
+          margin: 0 !important;
+          max-width: 100% !important;
+        }
+        div.appl_mobile .appl_apps img {
+          margin: 0 auto !important;
+        }
+        div.appl_mobile h1,
+        div.appl_mobile h2,
+        div.appl_mobile h3,
+        div.appl_mobile p {
+          margin: 10px 0;
+        }
+        div.appl_mobile h1,
+        div.appl_mobile h2 {
+          font-weight: 600;
+          color: #111;
+        }
+        div.appl_mobile p,
+        div.appl_mobile a,
+        div.appl_mobile h3 {
+          font-weight: 400;
+          color: #333;
+        }
+        div.appl_mobile h3 > a:first-child {
+          font-weight: 600;
+        }
+        /* banner-less logo*/
+        div.appl_mobile img.aapl_top_logo {
+          width: auto !important;
+          height: 28px !important;
+        }
+        div.appl_mobile img.appl_top_logo {
+          width: auto !important;
+          height: 28px !important;
+        }
+        div.appl_mobile div.aapl_top_logo {
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+        div.appl_mobile div.aapl_top_logo p {
+          color: #111111 !important;
+          font-size: 17px;
+          line-height: 25px;
+          letter-spacing: -0.022em;
+          text-align: left;
+          padding-top: 0px;
+          margin-bottom: 3px;
+        }
+        div.appl_mobile div.aapl_top_logo {
+          padding-top: 20px;
+          padding-bottom: 15px;
+        }
+        div.appl_mobile .aapl_logo_center {
+          padding-top: 35px;
+          padding-bottom: 10px;
+        }
+        div.appl_mobile .aapl_logo_center img {
+          margin: 0 auto !important;
+        }
+        /*larger banner-less headline*/
+        div.appl_mobile .appl_headline_large h1 {
+          font-size: 32px !important;
+          line-height: 36px !important;
+          letter-spacing: -0.018em;
+        }
+        div.appl_mobile .appl_headline_large p.appl_headline_txt {
+          margin-bottom: 5px;
+        }
+        div.appl_mobile .appl_headline_large p.appl_headline_txt,
+        div.appl_mobile .appl_headline_large p.appl_headline_link a {
+          font-size: 18px !important;
+          line-height: 26px !important;
+          letter-spacing: 0.016em !important;
+        }
+        div.appl_mobile .appl_headline_large p.appl_headline_link a img {
+          width: 12px !important;
+        }
+        /* Top Feature module */
+        div.appl_mobile h1 {
+          font-size: 32px;
+          line-height: 36px;
+          letter-spacing: 0.004em;
+          margin: 5px 0 10px;
+        }
+        div.appl_mobile .appl_hero h1 {
+          font-size: 27px;
+          line-height: 31px;
+          letter-spacing: 0.008em;
+          margin: 15px 0 10px;
+          font-size: 32px;
+          line-height: 36px;
+          letter-spacing: 0.004em;
+        }
+        div.appl_mobile h1:only-child {
+          margin: 5px 0 10px;
+        }
+        div.appl_mobile h1 * {
+          font-weight: inherit;
+          font-size: inherit;
+          line-height: inherit;
+        }
+        div.appl_mobile .appl_headline {
+          padding-top: 25px;
+          padding-bottom: 22px;
+        }
+        div.appl_mobile .aapl_logo + .appl_headline {
+          padding-top: 5px;
+        }
+        div.appl_mobile p.appl_sub_headline span {
+          display: block;
+          font-size: 1.2em !important;
+          line-height: 1.2em !important;
+          font-weight: 600;
+          margin-bottom: 5px;
+        }
+        div.appl_mobile p.appl_sub_headline {
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+        div.appl_mobile p.appl_headline_txt {
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: 0.012em;
+          margin: 10px 0;
+        }
+        div.appl_mobile p.appl_headline_txt:nth-child(2) {
+        }
+        div.appl_mobile p.appl_headline_link a {
+          font-size: 18px;
+          line-height: 26px;
+          padding-top: 5px;
+          padding-bottom: 0px;
+          letter-spacing: 0.012em;
+          display: block;
+        }
+        div.appl_mobile p.appl_headline_link a + a {
+          padding-top: 3px;
+        }
+        div.appl_mobile p.appl_headline_link a img {
+          width: 11px;
+        }
+        div.appl_mobile p.appl_headline_link a.appl_larger_cta {
+          font-size: 18px;
+        }
+        /* Blurb module */
+        div.appl_mobile .appl_cat_header {
+          padding-top: 5px;
+          padding-bottom: 25px;
+        }
+        div.appl_mobile .appl_cat_header_img {
+          padding-bottom: 0px;
+        }
+        div.appl_mobile .appl_cat_header h2 {
+          font-size: 27px;
+          line-height: 31px;
+          letter-spacing: 0.008em;
+          margin: 0px 0px 10px 0px;
+        }
+        div.appl_mobile .appl_cat_header h2 * {
+          font-size: inherit;
+          font-weight: inherit;
+          line-height: inherit;
+        }
+        div.appl_mobile .appl_cat_header p.appl_sub_headline span {
+          display: block;
+          font-size: 1.2em !important;
+          line-height: 1.2em !important;
+          font-weight: 600;
+          margin-bottom: 5px;
+        }
+        div.appl_mobile .appl_cat_header p {
+          font-size: 17px;
+          line-height: 25px;
+          letter-spacing: -0.022em;
+        }
+        div.appl_mobile .appl_cat_header h2 + p {
+          margin-top: 0px !important;
+        }
+        div.appl_mobile .appl_cat_header p.appl_headline_link > a {
+          font-size: 17px !important;
+          line-height: 25px;
+          letter-spacing: -0.022em;
+          display: block;
+          padding-bottom: 0px;
+        }
+        div.appl_mobile .appl_cat_header p.appl_headline_link > a:first-child {
+          padding-top: 0px;
+        }
+        div.appl_mobile .appl_cat_header p.appl_headline_link a + a {
+          padding-top: 2px;
+        }
+        div.appl_mobile .appl_cat_header p.appl_headline_link a img {
+          width: 11px !important;
+        }
+        /*lockers*/
+        div.appl_mobile .appl_apps {
+          padding-bottom: 0px;
+        }
+        div.appl_mobile .appl_apps > h3 {
+          max-width: 280px;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        div.appl_mobile .appl_apps > p,
+        div.appl_mobile .appl_apps > p + p {
+          max-width: 260px;
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
+        div.appl_mobile h3,
+        div.appl_mobile h3 a {
+          font-size: 19px;
+          line-height: 23px;
+          margin: 0 0 6px 0 !important;
+        }
+        div.appl_mobile h3 a ~ a {
+          font-size: 14px !important;
+          line-height: 18px !important;
+          margin: 0 0 6px 0;
+        }
+        div.appl_mobile .appl_apps p {
+          font-size: 14px;
+          color: #777777 !important;
+          line-height: 18px;
+          margin: 0 15px 5px 15px;
+        }
+        div.appl_mobile .appl_apps p + p {
+          margin: 15px 0 5px 0;
+        }
+        div.appl_mobile .appl_apps > div {
+          padding-bottom: 35px;
+        }
+        div.appl_mobile .appl_apps img {
+          width: 130px !important;
+          height: auto;
+          margin: 10px auto 17px !important;
+        }
+        div.appl_mobile
+          .appl_cat_header
+          + .appl_apps
+          > div:first-child
+          > div
+          > a:first-child
+          img,
+        div.appl_mobile
+          .appl_apps
+          + .appl_apps
+          > div:first-child
+          > div
+          > a:first-child
+          img {
+          /*margin-top:0!important*/
+        }
+        div.appl_mobile
+          .appl_cat_header
+          + .appl_apps
+          > div:first-child
+          > div
+          > a:first-child
+          img {
+          margin-top: 0 !important;
+        }
+        div.appl_mobile div.app_mob_hairline + .appl_apps {
+          margin-top: 40px;
+        }
+        div.appl_mobile .appl_apps p img {
+          width: 9px !important;
+          margin: 0 !important;
+        }
+        div.appl_mobile .left * {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+          text-align: left;
+        }
+        div.appl_mobile .left p {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+        div.appl_mobile .left img {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+        div.appl_mobile .appl_apps.left div > a > img {
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+        div.appl_mobile span.appl_button a {
+          white-space: nowrap;
+          background-color: #0070c9;
+          background: linear-gradient(#42a1ec, #0070c9);
+          padding: 0 15px !important;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 34px;
+          color: #ffffff;
+          text-decoration: none;
+          display: inline-block;
+          width: auto;
+          border-radius: 4px;
+          border: 1px solid #007aca;
+          box-sizing: border-box;
+          min-width: 120px;
+          text-align: center !important;
+        }
+        div.appl_mobile span.appl_button a:hover {
+          text-decoration: none;
+        }
+        div.appl_mobile span.appl_button {
+          display: block;
+          margin: 20px auto 15px;
+        }
+        div.appl_mobile span.pink.appl_button a {
+          background: none;
+          background-color: #ff2d55;
+          border: 0;
+        }
+        div.appl_mobile .appl_button ~ .appl_button {
+          margin-top: 15px !important;
+        }
+        div.appl_mobile span.appl_button + br {
+          display: block !important;
+        }
+        div.appl_mobile .appl_headline span.appl_button a {
+          font-size: 17px;
+        }
+        /*app store only*/
+        div.appl_mobile .appl_headline.appl_hero {
+          padding-top: 20px !important;
+          padding-bottom: 35px !important;
+        }
+        div.appl_mobile .aapl_hero_img.appl_hero img {
+          border-radius: 5px;
+        }
+        div.appl_mobile .appl_hero h1,
+        div.appl_mobile .appl_hero h2,
+        div.appl_mobile .appl_story h3 a {
+          font-weight: 600 !important;
+          color: #111111 !important;
+        }
+        div.appl_mobile .appl_hero p.appl_badge {
+          font-weight: 400 !important;
+          color: #333333 !important;
+        }
+        div.appl_mobile .appl_headline.appl_hero p.appl_badge {
+          font-size: 19px !important;
+          line-height: 23px !important;
+          letter-spacing: 0.012em;
+          margin-top: 0px;
+          margin-bottom: 5px;
+        }
+        div.appl_mobile .appl_headline.appl_hero h1 {
+          margin-top: 0px !important;
+        }
+        div.appl_mobile .appl_headline.appl_hero h1 {
+          font-size: 30px !important;
+          line-height: 34px;
+          margin-bottom: 0px;
+        }
+        div.appl_mobile .appl_hero .appl_headline_link {
+          margin: 0px !important;
+        }
+        div.appl_mobile .appl_hero .appl_headline_link p > a:first-of-type {
+          padding: 0px !important;
+        }
+        div.appl_mobile .appl_headline.appl_hero {
+          margin-top: 5px !important;
+        }
+        div.appl_mobile .appl_cat_header .appl_badge {
+          font-size: 19px !important;
+          line-height: 23px !important;
+          letter-spacing: 0.012em;
+          margin-top: 0px;
+          margin-bottom: 5px;
+        }
+        div.appl_mobile .appl_story * {
+          text-align: center;
+        }
+        div.appl_mobile .appl_story p {
+          font-size: 17px;
+          color: #333333 !important;
+          line-height: 25px;
+          margin: 7px 0 5px 0px;
+        }
+        div.appl_mobile .appl_story p + p {
+          margin: 15px 0 15px 0 !important;
+        }
+        div.appl_mobile .appl_story p a img {
+          width: 11px !important;
+        }
+        div.appl_mobile .app_mob_hairline + div.appl_cat_header {
+          padding-top: 35px !important;
+        }
+        div.appl_mobile .appl_story > div {
+          padding-bottom: 8px;
+        }
+        div.appl_mobile .appl_story > div:last-child {
+          padding-bottom: 25px;
+        }
+        div.appl_mobile .appl_story > a > img {
+          width: 100% !important;
+          border: 0 !important;
+          border-radius: 5px !important;
+          height: auto;
+          margin: 10px auto 25px !important;
+        }
+        div.appl_mobile .appl_story p.appl_badge {
+          font-weight: 400 !important;
+          color: #333333 !important;
+          font-size: 19px !important;
+          line-height: 24px !important;
+          margin-bottom: 3px !important;
+        }
+        div.appl_mobile .appl_story {
+        }
+        div.appl_mobile .appl_story h3 {
+          margin-top: 6px !important;
+          margin-bottom: 15px !important;
+        }
+        div.appl_mobile .appl_story h3 a {
+          font-size: 27px !important;
+          line-height: 31px !important;
+          letter-spacing: 0.008em;
+        }
+        div.appl_mobile
+          .appl_story
+          + .appl_story
+          > div:first-child
+          > div
+          > a:first-child
+          img,
+        div.appl_mobile
+          .appl_story
+          + .appl_story
+          > div:first-child
+          > div
+          > a:first-child
+          img {
+          margin-top: 0 !important;
+        }
+        div.appl_mobile div.app_mob_hairline + .appl_story {
+          margin-top: 40px;
+        }
+        div.appl_mobile .appl_story p img {
+          width: 9px !important;
+          margin: 0 !important;
+        }
+        div.appl_mobile .appl_story h3,
+        div.appl_mobile .appl_hero h3 a {
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 26px;
+          margin: 0 0 6px 0 !important;
+        }
+        div.appl_mobile .appl_story .appl_apps p {
+          font-size: 17px !important;
+          color: #333333 !important;
+          line-height: 25px;
+          margin: 0 15px 5px 15px;
+        }
+        div.appl_mobile .appl_story .appl_apps p + p {
+          margin: 15px 0 15px 0 !important;
+        }
+        div.appl_mobile
+          .appl_cat_headline
+          + .appl_story
+          > div:first-child
+          > div.appl_story
+          > a:first-child
+          img {
+          margin-top: 0px !important;
+        }
+        div.appl_mobile .appl_hero .appl_apps p img {
+          width: 11px !important;
+          margin: 0 !important;
+        }
+        div.appl_mobile .appl_hero {
+        }
+      }
+      /*** new categories mobile ***/
+      div.appl_mobile .appl_apps div.appl_albums > a > img,
+      div.appl_mobile .appl_apps div.appl_artists > a > img,
+      div.appl_mobile .appl_apps div.appl_author > a > img,
+      div.appl_mobile .appl_apps div.appl_books > a > img,
+      div.appl_mobile .appl_apps div.appl_movies > a > img,
+      div.appl_mobile .appl_apps div.appl_playlists > a > img,
+      div.appl_mobile
+        .appl_apps
+        div.appl_providers
+        > a
+        > img
+        div.appl_mobile
+        .appl_apps
+        div.appl_tracks
+        > a
+        > img,
+      div.appl_mobile .appl_apps div.appl_courses > a > img {
+        height: auto;
+        margin: 10px auto 17px !important;
+        border: 1px solid #eeeeee !important;
+      }
+      div.appl_mobile .appl_apps div.appl_courses > a > img {
+        border: 0 !important;
+      }
+      div.appl_mobile .appl_apps div.appl_books > a > img,
+      div.appl_mobile .appl_apps div.appl_movies > a > img {
+        width: 110px !important;
+      }
+      div.appl_mobile .appl_apps div.appl_music_videos > a > img {
+        border: 1px solid #eeeeee !important;
+        max-width: 270px !important;
+        width: 100% !important;
+        height: auto;
+        margin: 10px auto 17px !important;
+      }
+      /*footer*/
+      div.appl_mobile .appl_footer {
+        margin-top: 0px;
+        padding-top: 25px !important;
+        padding-bottom: 20px !important;
+        background-color: #f2f2f2;
+      }
+      div.appl_mobile .appl_footer * {
+        font-size: 11px;
+        line-height: 15px !important;
+        letter-spacing: -0.012em !important;
+        font-weight: 400;
+      }
+      div.appl_mobile .appl_footer p {
+        margin: 0 0 16px 0 !important;
+        text-align: center;
+        color: #888 !important;
+      }
+      div.appl_mobile .appl_footer a {
+        color: #555555 !important;
+        text-decoration: none;
+      }
+      div.appl_footer p {
+        margin: 0 0 16px 0 !important;
+        text-align: center;
+        color: #888 !important;
+      }
+      div.appl_footer a {
+        color: #555555 !important;
+        text-decoration: none;
+        line-height: 1.45em;
+      }
+      div.appl_footer div.appl_lowbrow_1 {
+        text-align: center !important;
+        padding-bottom: 15px;
+      }
+      div.appl_footer div.appl_lowbrow_2 {
+        padding-top: 10px;
+        padding-bottom: 30px;
+      }
+      div.appl_footer div.appl_lowbrow_1 a,
+      div.appl_footer div.appl_lowbrow_2 a {
+        white-space: nowrap;
+      }
+      div.appl_footer div.appl_social {
+        margin-bottom: 12px;
+      }
+      div.appl_footer div.appl_social a {
+        display: inline-block;
+        margin: 0 5px 0 5px;
+      }
+      div.appl_footer div.appl_social a img {
+        margin: 0;
+        border: 0;
+        height: 22px;
+        width: auto;
+      }
+      div.appl_footer div.appl_lowbrow_2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      div.appl_footer div.appl_lowbrow_2:last-child {
+        padding-top: 0px;
+        padding-bottom: 20px;
+      }
+      /*
+.appl_footer ul {list-style: none;float:left;padding-left:0; margin-bottom:10px;}
+.appl_footer ul {min-width:50%; padding-right:20px;}
+.appl_footer ul + ul {min-width:0;padding-right:0px;}
+.appl_footer ul li {text-align:left; padding-bottom: 2px;}
+div.appl_mobile .appl_lowbrow_1 {overflow:auto; border-top:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7; margin-bottom:15px;}
+div.appl_mobile .appl_lowbrow_1:first-child {margin-bottom:0px;}
+div.appl_mobile .appl_social {margin-bottom:12px}
+div.appl_mobile .appl_social a {display:inline-block;margin:0 6px 0 6px}
+div.appl_mobile .appl_social a img {margin:0; border:0; width:22px; height:auto;}
+*/
+      @media only screen and (max-width: 480px) {
+        div.appl_mobile .appl_pad {
+          padding-left: 6%;
+          padding-right: 6%;
+        }
+        div.appl_mobile .appl_apps div > a > img {
+          width: 130px !important;
+          height: auto;
+          margin: 10px auto 17px !important;
+        }
+        div.appl_mobile .appl_apps div.appl_music_videos > a > img {
+          max-width: 270px !important;
+          width: 100% !important;
+          height: auto;
+        }
+        div.appl_mobile .appl_apps div.appl_books > a > img,
+        div.appl_mobile .appl_apps div.appl_movies > a > img {
+          width: 160px !important;
+          height: auto;
+        }
+      }
+      @media only screen and (max-width: 375px) {
+        div.appl_mobile .appl_apps div > a > img {
+          width: 125px !important;
+          height: auto;
+        }
+        div.appl_mobile .appl_music_videos div > a > img {
+          max-width: 250px !important;
+          width: 100% !important;
+          height: auto;
+        }
+        div.appl_mobile .appl_books div > a > img,
+        div.appl_mobile .appl_movies div > a > img {
+          width: 120px !important;
+          height: auto;
+        }
+      }
+      @media only screen and (max-width: 320px) {
+        div.appl_mobile .appl_apps div > a > img {
+          width: 120px !important;
+          height: auto;
+        }
+        div.appl_mobile .appl_apps div.appl_music_videos > a > img {
+          max-width: 210px !important;
+          width: 100% !important;
+          height: auto;
+        }
+        div.appl_mobile .appl_apps div.appl_books > a > img,
+        div.appl_mobile .appl_apps div.appl_movies > a > img {
+          width: 135px !important;
+          height: auto;
+        }
+      }
+    </style>
+    <!--[if gte mso 9]>
+      <style type="text/css">
+        table,
+        td,
+        div,
+        p {
+          font-family: BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica,
+            Arial, sans-serif !important;
+          line-height: normal !important;
+        }
+        table,
+        tr,
+        td {
+          border-collapse: collapse;
+        }
+        tr {
+          font-size: 0px;
+          line-height: 0px;
+          border-collapse: collapse;
+        }
+      </style>
+    <![endif]-->
+  </head>
+  <body
+    rightmargin="0"
+    leftmargin="0"
+    bgcolor="#f2f2f2"
+    style="margin: 0; padding: 0"
+  >
+    <div
+      style="
+        display: none;
+        max-height: 0;
+        max-width: 0;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        font-size: 0px;
+        color: #f2f2f2;
+      "
+    >
+      Apply in as little as a minute. Get unlimited Daily Cash back on every
+      purchase, every day.
+    </div>
+    <div class="appl_desktop">
+      <table
+        width="100%"
+        cellspacing="0"
+        cellpadding="0"
+        border="0"
+        align="center"
+        class="appl_body appl_container_full"
+      >
+        <tr>
+          <td
+            bgcolor="#f2f2f2"
+            style="
+              padding-top: 12px;
+              padding-left: 10px;
+              padding-right: 10px;
+              min-width: 740px;
+            "
+          >
+            <table
+              width="740"
+              cellspacing="0"
+              cellpadding="0"
+              border="0"
+              align="center"
+              style="margin: 0 auto; border-radius: 4px; overflow: hidden"
+            >
+              <tr>
+                <td
+                  width="740"
+                  valign="top"
+                  align="center"
+                  style="background-color: #ffffff"
+                  class="appl_content"
+                >
+                  <table
+                    width="740"
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                    align="center"
+                    class="aapl_top_logo"
+                  >
+                    <tr>
+                      <td
+                        class="appl_hero_img"
+                        valign="top"
+                        align="left"
+                        style="padding: 26px; padding-bottom: 15px"
+                      >
+                        <img
+                          height="28"
+                          width="200"
+                          alt="Apple Card"
+                          class="appl_top_logo"
+                          style="display: block; margin: 0; border: 0"
+                          src="https://is3-ssl.mzstatic.com/image/thumb/Features113/v4/d8/dd/16/d8dd1639-ec0e-6af2-1d7e-d4b6a6da83d5/mza_6456481665381339156.png/400x56bb-100.png"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                  <table
+                    width="100%"
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                  >
+                    <tr>
+                      <td
+                        align="center"
+                        style="padding-left: 26px; padding-right: 26px"
+                      >
+                        <table
+                          cellspacing="0"
+                          width="620"
+                          border="0"
+                          cellpadding="0"
+                          align="center"
+                          class="appl_headline"
+                          style="margin: 0 auto"
+                        >
+                          <tr>
+                            <td
+                              align="center"
+                              style="padding-bottom: 20px; padding-top: 40px"
+                            >
+                              <img
+                                src="https://is3-ssl.mzstatic.com/image/thumb/23qeLkNxtPrdkQZfvlbkpQ/1240x207bb-90.png"
+                                width="620"
+                                alt="There&rsquo;s Apple Card. And then there&rsquo;s Not Apple Card."
+                                align="middle"
+                                style="
+                                  display: block;
+                                  margin: 0 auto;
+                                  border: 0;
+                                "
+                              />
+                            </td>
+                          </tr>
+                        </table>
+                        <p
+                          style="
+                            margin-top: 0px;
+                            margin-bottom: 15px;
+                            font-family: system-ui, -apple-system,
+                              BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue',
+                              Helvetica, Arial, sans-serif;
+                            font-weight: 400;
+                            font-size: 17px;
+                            color: #333333;
+                            line-height: 25px;
+                            letter-spacing: -0.022em;
+                          "
+                          class="appl_headline_txt"
+                        >
+                          See your credit limit offer with no impact to your
+                          credit&nbsp;score.<sup
+                            style="line-height: 0; font-size: 60%"
+                            >1</sup
+                          >
+                        </p>
+                        <table
+                          width="100%"
+                          cellspacing="0"
+                          cellpadding="0"
+                          border="0"
+                        >
+                          <tr>
+                            <td align="center" style="padding-bottom: 35px">
+                              <table
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                                style="display: inline-block"
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      padding-left: 20px;
+                                      padding-right: 20px;
+                                      padding-bottom: 15px;
+                                    "
+                                  >
+                                    <table
+                                      cellspacing="0"
+                                      border="0"
+                                      cellpadding="0"
+                                      style="
+                                        display: inline-block;
+                                        border-spacing: 0;
+                                        border-collapse: separate;
+                                        border: 1px solid #0070c9;
+                                        border-radius: 4px;
+                                        overflow: hidden;
+                                        background-color: #0070c9;
+                                        background: linear-gradient(
+                                          #42a1ec,
+                                          #0070c9
+                                        );
+                                        min-width: 0;
+                                      "
+                                    >
+                                      <tr>
+                                        <td
+                                          height="33"
+                                          align="center"
+                                          valign="middle"
+                                        >
+                                          <a
+                                            href="https://wallet.apple.com/apple-card/setup/feature/ccs?referrer=cid%3Dapy-110-100638"
+                                            class="appl-link appl_desktop"
+                                            style="
+                                              width: 100%;
+                                              display: block;
+                                              font-size: 17px;
+                                              line-height: 33px;
+                                              font-family: system-ui,
+                                                -apple-system,
+                                                BlinkMacSystemFont, 'Segoe UI',
+                                                'Helvetica Neue', Helvetica,
+                                                Arial, sans-serif;
+                                              font-weight: 400;
+                                              color: #ffffff;
+                                              text-decoration: none !important;
+                                              display: block;
+                                              min-width: 120px;
+                                            "
+                                            >&nbsp;&nbsp;&nbsp;&nbsp;Apply
+                                            now&nbsp;&nbsp;&nbsp;&nbsp;</a
+                                          >
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="appl_hero_img"
+                        valign="top"
+                        align="center"
+                        style="padding-bottom: 0"
+                      >
+                        <a style="text-decoration: none"
+                          ><img
+                            align="middle"
+                            width="740"
+                            height="400"
+                            alt="Card balance on iPhone"
+                            class="appl_hero_img1"
+                            style="
+                              display: block;
+                              margin: 0 auto;
+                              border: 0;
+                              width: 100%;
+                              height: 416;
+                              max-width: 740px;
+                              max-height: 416px;
+                            "
+                            src="https://is2-ssl.mzstatic.com/image/thumb/u2Tdasky9N_0oYyCbqsWSw/1480x800bb-90.png"
+                        /></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-left: 75px; padding-right: 75px">
+                        <table
+                          cellspacing="0"
+                          width="100%"
+                          border="0"
+                          cellpadding="0"
+                          align="left"
+                          class="appl_cat_headline"
+                        >
+                          <tr>
+                            <td
+                              align="left"
+                              style="padding-bottom: 35px; padding-top: 40px"
+                            >
+                              <p
+                                style="
+                                  margin-top: 0px;
+                                  margin-bottom: 15px;
+                                  font-family: system-ui, -apple-system,
+                                    BlinkMacSystemFont, 'Segoe UI',
+                                    'Helvetica Neue', Helvetica, Arial,
+                                    sans-serif;
+                                  font-weight: 400;
+                                  font-size: 17px;
+                                  color: #333333;
+                                  line-height: 25px;
+                                  letter-spacing: -0.022em;
+                                "
+                                class="appl_headline_txt"
+                              >
+                                If your credit card isn’t Apple&nbsp;Card,
+                                you’re likely putting up with too many fees and
+                                confusing reward systems. Apple&nbsp;Card is
+                                different. It has no fees<sup
+                                  style="line-height: 0; font-size: 60%"
+                                  >2</sup
+                                >
+                                and every purchase gives you up to
+                                3%&nbsp;Daily&nbsp;Cash, which is real cash<sup
+                                  style="line-height: 0; font-size: 60%"
+                                  >3</sup
+                                >
+                                that never expires or loses value. And now you
+                                can grow your Daily&nbsp;Cash and your personal
+                                savings at 4.15% annual percentage yield
+                                (APY)<sup style="line-height: 0; font-size: 60%"
+                                  >4</sup
+                                >
+                                when you open a high-yield Savings account.<sup
+                                  style="line-height: 0; font-size: 60%"
+                                  >5</sup
+                                >
+                                Apply for Apple&nbsp;Card in as little as a
+                                minute and see your credit limit and interest
+                                rate offer &mdash; all without impact to your
+                                credit&nbsp;score.
+                              </p>
+                              <p
+                                style="
+                                  margin-top: 0;
+                                  margin-bottom: 2px;
+                                  font-family: system-ui, -apple-system,
+                                    BlinkMacSystemFont, 'Segoe UI',
+                                    'Helvetica Neue', Helvetica, Arial,
+                                    sans-serif;
+                                  color: #333333;
+                                  font-size: 17px;
+                                  line-height: 26px;
+                                  letter-spacing: -0.021em;
+                                  font-weight: 400;
+                                "
+                              >
+                                <a
+                                  href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBjH39S%2BmBXz%2B5jU6CD4rQcQ%3D%3D"
+                                  class="appl-link appl_desktop"
+                                  style="color: #0070c9; text-decoration: none"
+                                  >Learn more about Apple&nbsp;Card
+                                  <nobr
+                                    >and&nbsp;Savings<img
+                                      width="11"
+                                      alt=""
+                                      border="0"
+                                      class="more"
+                                      style="margin: 0; border: 0"
+                                      src="https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/01/27/c3/0127c317-7e3e-d2a9-7f24-3d055fa10d58/mza_9624361562589445119.png/26x26bb-90.png" /></nobr
+                                ></a>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              align="left"
+                              style="padding-bottom: 35px; padding-top: 10px"
+                            >
+                              <img
+                                src="https://is3-ssl.mzstatic.com/image/thumb/Features112/v4/4b/24/7a/4b247ad7-5d0b-786c-66db-a528a7fa0654/mza_6237737108282750466.png/1240x598bb-90.png"
+                                width="590"
+                                alt="No annual fees. No late fees. No foreign transaction fees. No processing fees. No hidden fees. No fees ever."
+                                align="middle"
+                                style="display: block; margin: 0; border: 0"
+                              />
+                              <p
+                                style="
+                                  margin-top: 0px;
+                                  margin-bottom: 15px;
+                                  font-family: system-ui, -apple-system,
+                                    BlinkMacSystemFont, 'Segoe UI',
+                                    'Helvetica Neue', Helvetica, Arial,
+                                    sans-serif;
+                                  font-weight: 400;
+                                  font-size: 17px;
+                                  color: #333333;
+                                  line-height: 25px;
+                                  letter-spacing: -0.022em;
+                                "
+                                class="appl_headline_txt"
+                              >
+                                Other credit cards often charge fees for access
+                                to perks you might not even use or that usually
+                                come with restrictions. But Apple&nbsp;Card
+                                gives you valuable benefits without annual fees.
+                                In fact, Apple&nbsp;Card has no fees
+                                at&nbsp;all.
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        class="appl_hero_img"
+                        valign="top"
+                        align="center"
+                        style="padding-bottom: 0"
+                      >
+                        <a style="text-decoration: none"
+                          ><img
+                            align="middle"
+                            width="740"
+                            height="400"
+                            alt="Savings graph"
+                            class="appl_hero_img1"
+                            style="
+                              display: block;
+                              margin: 0 auto;
+                              border: 0;
+                              width: 100%;
+                              height: 416;
+                              max-width: 740px;
+                              max-height: 416px;
+                            "
+                            src="https://static-its-images.apple.com/images/applepay/PAY_Firebrand_Email-Gif_UI-Graph_1480x800.gif"
+                        /></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-left: 75px; padding-right: 75px">
+                        <table
+                          cellspacing="0"
+                          width="100%"
+                          border="0"
+                          cellpadding="0"
+                          align="left"
+                          class="appl_cat_headline"
+                        >
+                          <tr>
+                            <td
+                              align="left"
+                              style="padding-bottom: 20px; padding-top: 40px"
+                            >
+                              <p
+                                style="
+                                  margin-top: 0px;
+                                  margin-bottom: 15px;
+                                  font-family: system-ui, -apple-system,
+                                    BlinkMacSystemFont, 'Segoe UI',
+                                    'Helvetica Neue', Helvetica, Arial,
+                                    sans-serif;
+                                  color: #111111;
+                                  font-weight: 600;
+                                  font-size: 32px;
+                                  line-height: 36px;
+                                  letter-spacing: 0.004em;
+                                "
+                              >
+                                4.15% APY.<br />High yield. Low&nbsp;effort.
+                              </p>
+                              <p
+                                style="
+                                  margin-top: 0px;
+                                  margin-bottom: 15px;
+                                  font-family: system-ui, -apple-system,
+                                    BlinkMacSystemFont, 'Segoe UI',
+                                    'Helvetica Neue', Helvetica, Arial,
+                                    sans-serif;
+                                  font-weight: 400;
+                                  font-size: 17px;
+                                  color: #333333;
+                                  line-height: 25px;
+                                  letter-spacing: -0.022em;
+                                "
+                                class="appl_headline_txt"
+                              >
+                                Anytime you make a purchase, you’ll get up to 3%
+                                unlimited Daily&nbsp;Cash. That’s real cash you
+                                can use right away, send to a friend, or use
+                                wherever Apple&nbsp;Pay is accepted when you
+                                send Daily&nbsp;Cash to Apple&nbsp;Cash.<sup
+                                  style="line-height: 0; font-size: 60%"
+                                  >6</sup
+                                >
+                                Now, you can also choose to automatically send
+                                your Daily&nbsp;Cash to Savings where it’ll grow
+                                at 4.15% APY. That’s more than 10x the national
+                                average.<sup
+                                  style="line-height: 0; font-size: 60%"
+                                  >7</sup
+                                >
+                                Your Daily&nbsp;Cash gets deposited
+                                automatically, and you can add more funds to
+                                Savings from a linked bank account, whenever
+                                you like.<sup
+                                  style="line-height: 0; font-size: 60%"
+                                  >8</sup
+                                >
+                                All it takes is a few steps&nbsp;&mdash; no
+                                additional credit checks. And all your account
+                                information lives right in&nbsp;Wallet.
+                              </p>
+                              <p
+                                style="
+                                  margin-top: 0;
+                                  margin-bottom: 2px;
+                                  font-family: system-ui, -apple-system,
+                                    BlinkMacSystemFont, 'Segoe UI',
+                                    'Helvetica Neue', Helvetica, Arial,
+                                    sans-serif;
+                                  color: #333333;
+                                  font-size: 17px;
+                                  line-height: 26px;
+                                  letter-spacing: -0.021em;
+                                  font-weight: 400;
+                                "
+                              >
+                                <a
+                                  href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBNJLfXn0ivckIQGcTGBNQoQ%3D%3D"
+                                  class="appl-link appl_desktop"
+                                  style="color: #0070c9; text-decoration: none"
+                                  >Learn more about Daily&nbsp;Cash
+                                  <nobr
+                                    >and&nbsp;Savings<img
+                                      width="11"
+                                      alt=""
+                                      border="0"
+                                      class="more"
+                                      style="margin: 0; border: 0"
+                                      src="https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/01/27/c3/0127c317-7e3e-d2a9-7f24-3d055fa10d58/mza_9624361562589445119.png/26x26bb-90.png" /></nobr
+                                ></a>
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-bottom: 0px">
+                        <a style="text-decoration: none"
+                          ><img
+                            align="middle"
+                            width="740"
+                            height="400"
+                            alt="Apple lock animation"
+                            class="appl_cat_img1"
+                            style="
+                              display: block;
+                              margin: 0 auto;
+                              border: 0;
+                              width: 100%;
+                              height: 400;
+                              max-width: 740px;
+                              max-height: 400px;
+                            "
+                            src="https://static-its-images.apple.com/images/card/Card_Firebrand_Prospects_Email-Gif_1480x800_Lock.gif"
+                        /></a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-left: 75px; padding-right: 75px">
+                        <table
+                          cellspacing="0"
+                          width="100%"
+                          border="0"
+                          cellpadding="0"
+                          align="left"
+                          class="appl_cat_headline"
+                        >
+                          <tr>
+                            <td
+                              align="left"
+                              style="padding-bottom: 35px; padding-top: 35px"
+                            >
+                              <p
+                                style="
+                                  margin-top: 0px;
+                                  margin-bottom: 15px;
+                                  font-family: system-ui, -apple-system,
+                                    BlinkMacSystemFont, 'Segoe UI',
+                                    'Helvetica Neue', Helvetica, Arial,
+                                    sans-serif;
+                                  color: #111111;
+                                  font-weight: 600;
+                                  font-size: 32px;
+                                  line-height: 36px;
+                                  letter-spacing: 0.004em;
+                                "
+                              >
+                                Your card. Your data.<br />Your business.
+                              </p>
+                              <p
+                                style="
+                                  margin-top: 0px;
+                                  margin-bottom: 15px;
+                                  font-family: system-ui, -apple-system,
+                                    BlinkMacSystemFont, 'Segoe UI',
+                                    'Helvetica Neue', Helvetica, Arial,
+                                    sans-serif;
+                                  font-weight: 400;
+                                  font-size: 17px;
+                                  color: #333333;
+                                  line-height: 25px;
+                                  letter-spacing: -0.022em;
+                                "
+                                class="appl_headline_txt"
+                              >
+                                Apple takes your privacy and security seriously.
+                                It’s not just a philosophy, it’s built into all
+                                our products. With advanced security
+                                technologies like Face&nbsp;ID, Touch&nbsp;ID,
+                                and unique transaction codes, Apple&nbsp;Card is
+                                designed to make sure you’re the only one who
+                                can use it. And while Goldman Sachs uses your
+                                data to operate Apple&nbsp;Card and Savings,
+                                your data isn’t sold to third parties for
+                                marketing or&nbsp;advertising.
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              align="left"
+                              style="padding-bottom: 35px; padding-top: 10px"
+                            >
+                              <p
+                                style="
+                                  margin-top: 0px;
+                                  margin-bottom: 15px;
+                                  font-family: system-ui, -apple-system,
+                                    BlinkMacSystemFont, 'Segoe UI',
+                                    'Helvetica Neue', Helvetica, Arial,
+                                    sans-serif;
+                                  color: #111111;
+                                  font-weight: 600;
+                                  font-size: 32px;
+                                  line-height: 36px;
+                                  letter-spacing: 0.004em;
+                                "
+                              >
+                                <a
+                                  href="https://wallet.apple.com/apple-card/setup/feature/ccs?referrer=cid%3Dapy-110-100638"
+                                  ><img
+                                    src="https://is3-ssl.mzstatic.com/image/thumb/Features114/v4/06/b5/48/06b548ab-6ee2-f384-0012-1db104a4fa5d/mza_2643128171960491529.png/240x240bb-90.png"
+                                    width="64"
+                                    alt="Wallet app icon"
+                                    border="0"
+                                    style="padding-bottom: 20px" /></a
+                                ><br />Start using Apple&nbsp;Card
+                                right&nbsp;away.<sup
+                                  style="line-height: 0; font-size: 60%"
+                                  >9</sup
+                                >
+                              </p>
+                              <p
+                                style="
+                                  margin-top: 0px;
+                                  margin-bottom: 15px;
+                                  font-family: system-ui, -apple-system,
+                                    BlinkMacSystemFont, 'Segoe UI',
+                                    'Helvetica Neue', Helvetica, Arial,
+                                    sans-serif;
+                                  font-weight: 400;
+                                  font-size: 17px;
+                                  color: #333333;
+                                  line-height: 25px;
+                                  letter-spacing: -0.022em;
+                                "
+                                class="appl_headline_txt"
+                              >
+                                See your credit limit and interest rate offer
+                                for Apple&nbsp;Card&nbsp;&mdash; all without
+                                impacting your credit&nbsp;score.
+                              </p>
+                              <table
+                                width="100%"
+                                cellspacing="0"
+                                cellpadding="0"
+                                border="0"
+                              >
+                                <tr>
+                                  <td align="left" style="padding-bottom: 0px">
+                                    <table
+                                      cellspacing="0"
+                                      cellpadding="0"
+                                      border="0"
+                                      style="display: inline-block"
+                                    >
+                                      <tr>
+                                        <td
+                                          style="
+                                            padding-left: 0px;
+                                            padding-right: 0px;
+                                            padding-bottom: 15px;
+                                          "
+                                        >
+                                          <table
+                                            cellspacing="0"
+                                            border="0"
+                                            cellpadding="0"
+                                            style="
+                                              display: inline-block;
+                                              border-spacing: 0;
+                                              border-collapse: separate;
+                                              border: 1px solid #0070c9;
+                                              border-radius: 4px;
+                                              overflow: hidden;
+                                              background-color: #0070c9;
+                                              background: linear-gradient(
+                                                #42a1ec,
+                                                #0070c9
+                                              );
+                                              min-width: 0;
+                                            "
+                                          >
+                                            <tr>
+                                              <td
+                                                height="33"
+                                                align="center"
+                                                valign="middle"
+                                              >
+                                                <a
+                                                  href="https://wallet.apple.com/apple-card/setup/feature/ccs?referrer=cid%3Dapy-110-100638"
+                                                  class="appl-link appl_desktop"
+                                                  style="
+                                                    width: 100%;
+                                                    display: block;
+                                                    font-size: 17px;
+                                                    line-height: 33px;
+                                                    font-family: system-ui,
+                                                      -apple-system,
+                                                      BlinkMacSystemFont,
+                                                      'Segoe UI',
+                                                      'Helvetica Neue',
+                                                      Helvetica, Arial,
+                                                      sans-serif;
+                                                    font-weight: 400;
+                                                    color: #ffffff;
+                                                    text-decoration: none !important;
+                                                    display: block;
+                                                    min-width: 120px;
+                                                  "
+                                                  >&nbsp;&nbsp;&nbsp;&nbsp;Apply
+                                                  now&nbsp;&nbsp;&nbsp;&nbsp;</a
+                                                >
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table
+              width="740"
+              cellspacing="0"
+              cellpadding="0"
+              border="0"
+              align="center"
+              style="margin: 0 auto"
+              class=""
+            >
+              <tr>
+                <td align="center" style="padding-top: 25px">
+                  <table
+                    align="center"
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                    style="display: inline-block"
+                  >
+                    <tr></tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" style="padding-bottom: 60px">
+                  <table
+                    width="100%"
+                    align="center"
+                    border="0"
+                    cellspacing="0"
+                    cellpadding="0"
+                    align="center"
+                    id="appl-footer"
+                  >
+                    <tr>
+                      <td
+                        align="center"
+                        style="
+                          padding-top: 21px;
+                          padding-bottom: 14px;
+                          padding-left: 50px;
+                          padding-right: 50px;
+                        "
+                        class="appl_footer_text1 appl_footer_text appl_center"
+                      >
+                        <div
+                          style="
+                            font-family: system-ui, -apple-system,
+                              BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue',
+                              Helvetica, Arial, sans-serif;
+                            color: #888888;
+                            font-size: 11px;
+                            line-height: 15px;
+                            max-width: 680px;
+                            text-align: left;
+                          "
+                        >
+                          1. Accepting an Apple&nbsp;Card after your application
+                          is approved will result in a hard inquiry, which may
+                          impact your credit&nbsp;score.
+                          <br /><br />
+                          2. Variable APRs for Apple&nbsp;Card range from 15.99%
+                          to 26.99% based on creditworthiness. Rates as of
+                          June&nbsp;1,&nbsp;2023. Late or missed payments will
+                          result in additional interest accumulating toward
+                          your&nbsp;balance.
+                          <br /><br />
+                          3. You can choose to direct Daily&nbsp;Cash to a
+                          Savings account or to an Apple&nbsp;Cash card. If you
+                          do not have either set up to receive your
+                          Daily&nbsp;Cash, it can be applied as statement
+                          credit. Apple&nbsp;Card and Savings accounts are
+                          issued or provided by Goldman Sachs Bank USA, Salt
+                          Lake City Branch, Member FDIC. The Apple&nbsp;Cash
+                          card is issued by Green Dot Bank, Member FDIC.
+                          Daily&nbsp;Cash is earned on purchases after the
+                          transaction posts to your account. Actual posting
+                          times vary by merchant. Daily&nbsp;Cash is subject to
+                          exclusions, and additional details apply. See the
+                          <a
+                            href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBt6%2FA0t5ggzG2%2B4InHoRQtA%3D%3D"
+                            style="
+                              color: #0070c9;
+                              text-decoration: none;
+                              white-space: nowrap;
+                            "
+                            >Apple&nbsp;Card Customer&nbsp;Agreement</a
+                          >
+                          for more&nbsp;information. <br /><br />
+                          4. Annual Percentage Yield as of
+                          April&nbsp;14,&nbsp;2023. APY may change at any time
+                          before or after account is opened. Maximum balance
+                          limits&nbsp;apply.
+                          <br /><br />
+                          5. To access Savings, Apple&nbsp;Card Owners and
+                          Co-Owners must open a Savings account. Savings
+                          accounts are provided by Goldman Sachs Bank USA, Salt
+                          Lake City Branch. Member FDIC. Apple&nbsp;Card Owners
+                          and Co-Owners may individually apply for a Savings
+                          account and are subject to eligibility requirements.
+                          By opening a Savings account, Apple&nbsp;Card Owners
+                          and Co-Owners are affirmatively electing to have all
+                          future Daily&nbsp;Cash automatically deposited into
+                          their respective Savings account. Daily&nbsp;Cash may
+                          not be divided between Apple&nbsp;Cash&nbsp;Card and
+                          Savings accounts. Owners and Co-Owners may
+                          individually change where their Daily&nbsp;Cash is
+                          deposited at any time. Savings accounts are not
+                          available in American Samoa, Guam, Northern Mariana
+                          Islands, or US Minor Outlying Islands. To set up
+                          Savings, you must add Apple&nbsp;Card to Wallet on an
+                          iPhone or iPad that supports and has the latest
+                          version of iOS or&nbsp;iPadOS.
+                          <br /><br />
+                          6. Apple&nbsp;Cash services are provided by Green Dot
+                          Bank, Member FDIC. Learn more about the
+                          <a
+                            href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBdz5aUHpQscoLiBYDMJZ44A%3D%3D"
+                            style="
+                              color: #0070c9;
+                              text-decoration: none;
+                              white-space: nowrap;
+                            "
+                            >Terms and Conditions</a
+                          >. Only available in the U.S. on eligible devices. To
+                          send and receive money with an Apple&nbsp;Cash
+                          account, you must be 18 and a U.S. resident. If you
+                          are under 18, your family organizer can set up
+                          Apple&nbsp;Cash for you as part of their
+                          Apple&nbsp;Cash&nbsp;Family&nbsp;Account. Security
+                          checks may require more time to make funds available.
+                          Apple&nbsp;Cash&nbsp;Family&nbsp;Accounts can send or
+                          receive up to $2000 per transaction or within a
+                          seven-day period. Sending money from Wallet requires
+                          iOS&nbsp;15.5 or&nbsp;later. <br /><br />
+                          7. The national average rate referenced is from the
+                          FDIC’s published National Rates and Rate Caps for
+                          Savings deposit products, accurate as of 05/15/2023.
+                          See the FDIC website
+                          <a
+                            href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBc89NVCcqJ0lsWrrlBUlvSg%3D%3D"
+                            style="
+                              color: #0070c9;
+                              text-decoration: none;
+                              white-space: nowrap;
+                            "
+                            >https://www.fdic.gov/resources/bankers/national-rates/index.html</a
+                          >
+                          for more information. <br /><br />
+                          8. Maximum balance limits apply. See the
+                          <a
+                            href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBRPdcyZg5J%2BNZeS2j4%2FEusA%3D%3D"
+                            style="
+                              color: #0070c9;
+                              text-decoration: none;
+                              white-space: nowrap;
+                            "
+                            >Deposit Account Agreement</a
+                          >
+                          for more information regarding balance&nbsp;limits.<br /><br />
+                          9. Subject to credit&nbsp;approval.
+                          <br /><br />
+                          To access and use all Apple&nbsp;Card features and
+                          products available only to Apple&nbsp;Card users, you
+                          must add Apple&nbsp;Card to Wallet on an iPhone or
+                          iPad that supports and has the latest version of iOS
+                          or iPadOS. Apple&nbsp;Card is subject to credit
+                          approval, available only for qualifying applicants in
+                          the United States, and issued by Goldman Sachs Bank
+                          USA, Salt Lake City&nbsp;Branch.
+                          <br /><br />
+                          If you reside in the U.S. territories, please call
+                          Goldman Sachs at
+                          <nobr>877&#8209;255&#8209;5923</nobr> with questions
+                          about Apple&nbsp;Card.
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        align="center"
+                        style="
+                          padding-top: 0;
+                          padding-bottom: 15px;
+                          padding-left: 50px;
+                          padding-right: 50px;
+                        "
+                        class="appl_center appl_footer_text appl_footer_text2"
+                      >
+                        <div
+                          style="
+                            font-family: system-ui, -apple-system,
+                              BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue',
+                              Helvetica, Arial, sans-serif;
+                            color: #888888;
+                            font-size: 11px;
+                            line-height: 14px;
+                            text-align: left;
+                          "
+                        >
+                          All rights reserved. Copyright &copy; 2023 Apple Inc.
+                          One Apple Park Way, Cupertino, CA 95014.
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <table
+                    width="100%"
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                    align="center"
+                  >
+                    <tr>
+                      <td
+                        align="center"
+                        style="
+                          font-family: Helvetica Neue, Helvetica, Lucida Grande,
+                            Arial, sans-serif;
+                          color: #999999;
+                          font-size: 9px;
+                          line-height: 1.32em;
+                          padding: 0;
+                        "
+                        class="appl_lowbrow"
+                      >
+                        <a
+                          href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBcBEKUn2GQplHK33rhDL18g%3D%3D"
+                          class="appl-link"
+                          style="
+                            color: #555555;
+                            font-family: system-ui, -apple-system,
+                              BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue',
+                              Helvetica, Arial, sans-serif;
+                            font-size: 11px;
+                            line-height: 14px;
+                            white-space: nowrap;
+                            text-decoration: none;
+                          "
+                          >Privacy Policy</a
+                        >
+                        &nbsp;|&nbsp;
+                        <a
+                          href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBdH94hDQ721s7Qzbxqyt%2BBg%3D%3D"
+                          class="appl-link"
+                          style="
+                            color: #555555;
+                            font-family: system-ui, -apple-system,
+                              BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue',
+                              Helvetica, Arial, sans-serif;
+                            font-size: 11px;
+                            line-height: 14px;
+                            white-space: nowrap;
+                            text-decoration: none;
+                          "
+                          >Terms & Conditions</a
+                        >
+                        &nbsp;|&nbsp;
+                        <a
+                          href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBrlW7iftSqjMJbNjAl%2FzgZQ%3D%3D"
+                          class="appl-link"
+                          style="
+                            color: #555555;
+                            font-family: system-ui, -apple-system,
+                              BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue',
+                              Helvetica, Arial, sans-serif;
+                            font-size: 11px;
+                            line-height: 14px;
+                            white-space: nowrap;
+                            text-decoration: none;
+                          "
+                          >My Apple ID</a
+                        >
+                        &nbsp;|&nbsp;
+                        <a
+                          href="https://c.apple.com/r?v=2&a=8ps6Ok0qKWiF37xoxStPOmTNGs51zlivdjtcXTFjpLnVfNVUW3O2%2Fg0FsgBl8SdvTx20IK997Wb6cow2ElFVnTxkYZkb4z5x75fXqhW9Q%2B4rwo9xMsOlu%2FcjPfp4P1xccu2fxKCfysEsi7mx1yQbWFzRzagL8%2BhrVLpHPuo5l6geR2HB88VcuQQ3MAu0zN42QZoui1sxxWNn5xfa3jo4DD3RiyUQ34jfQ7%2BH3k0uehr5TGHt7JNJS%2FWLPs5EdADBh4KIwQkxQgcPSbitxtrC010kwMwa8sr3jove8vDWYQRRSfQDfBmqBKbVLW41ElJ1mLJM%2BRUsMB7Wq84puxcX5WPMKe862QgKdsCr525kRXWI0BjLNPvvmP9fo2yB8IOQF6noHRCYf%2FQcK42bsOQcPU7ggmrP7EV4qsdXgzkbJihr3DE8tOJ7acCYlg0kH5o%2BcNWSh42GhjWNwvKVvg0IyxCV4Tvt2Z9Ul18Rmvh%2Fkn7LNeRZ2cwFyJcO9Hg4Yq5l"
+                          class="appl-link"
+                          style="
+                            color: #555555;
+                            font-family: system-ui, -apple-system,
+                              BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue',
+                              Helvetica, Arial, sans-serif;
+                            font-size: 11px;
+                            line-height: 14px;
+                            white-space: nowrap;
+                            text-decoration: none;
+                          "
+                          >Unsubscribe</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                  <table
+                    width="100%"
+                    cellspacing="0"
+                    cellpadding="0"
+                    border="0"
+                    align="center"
+                  >
+                    <tr>
+                      <td
+                        align="center"
+                        style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;color:#888888;font-size:11px;line-height:line-height:15px;padding:0"
+                        class="appl_lowbrow"
+                      ></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <br />
+    </div>
+    <!-- mobile -->
+    <!--[if !mso]><!-->
+    <div style="background-color: #f2f2f2">
+      <div
+        class="appl_mobile"
+        style="
+          display: none;
+          max-height: 0;
+          max-width: 0;
+          width: 0;
+          height: 0;
+          font-size: 0;
+          overflow: hidden;
+        "
+      >
+        <div class="aapl_top_logo appl_pad">
+          <img
+            height="28"
+            alt="Apple Card"
+            class="appl_top_logo"
+            style="display: block; margin: 0; border: 0"
+            src="https://is3-ssl.mzstatic.com/image/thumb/Features113/v4/d8/dd/16/d8dd1639-ec0e-6af2-1d7e-d4b6a6da83d5/mza_6456481665381339156.png/400x56bb-100.png"
+          />
+        </div>
+        <div class="appl_headline appl_pad">
+          <div class="appl_cat_header" style="padding-bottom: 0px !important">
+            <img
+              src="https://is3-ssl.mzstatic.com/image/thumb/Features112/v4/16/87/59/16875926-c96c-2a19-c68c-c27f3c61c6de/mza_3714309051569384288.png/728x244bb-90.png"
+              width="364"
+              alt="There&rsquo;s Apple Card. And then there&rsquo;s Not Apple Card."
+              align="middle"
+              style="display: block; margin: 0 auto !important; border: 0"
+            />
+            <p>
+              See your credit limit offer with no impact to your
+              credit&nbsp;score.<sup style="line-height: 0; font-size: 60%"
+                >1</sup
+              >
+            </p>
+            <p style="" class="appl_headline_link">
+              <span class="appl_button"
+                ><a
+                  href="https://wallet.apple.com/apple-card/setup/feature/ccs?referrer=cid%3Dapy-110-100638"
+                  class="appl-link"
+                  style="color: #ffffff; text-decoration: none"
+                  >Apply now</a
+                ></span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="aapl_hero_img appl_100">
+          <a style="text-decoration: none"
+            ><img
+              width="100%"
+              alt="Card balance on iPhone"
+              class="appl_hero_img1"
+              style="display: block; margin: 0; border: 0"
+              src="https://is2-ssl.mzstatic.com/image/thumb/grrPjPNsqpT7QiryIaHJ1A/1480x1300bb-90.png"
+          /></a>
+        </div>
+        <div class="appl_pad appl_cat_headline appl_left">
+          <div class="appl_cat_header" style="padding-top: 20px !important">
+            <p>
+              If your credit card isn’t Apple&nbsp;Card, you’re likely putting
+              up with too many fees and confusing reward systems.
+              Apple&nbsp;Card is different. It has no fees<sup
+                style="line-height: 0; font-size: 60%"
+                >2</sup
+              >
+              and every purchase gives you up to 3%&nbsp;Daily&nbsp;Cash, which
+              is real cash<sup style="line-height: 0; font-size: 60%">3</sup>
+              that never expires or loses value. And now you can grow your
+              Daily&nbsp;Cash and your personal savings at 4.15% annual
+              percentage yield (APY)<sup style="line-height: 0; font-size: 60%"
+                >4</sup
+              >
+              when you open a high-yield Savings account.<sup
+                style="line-height: 0; font-size: 60%"
+                >5</sup
+              >
+              Apply for Apple&nbsp;Card in as little as a minute and see your
+              credit limit and interest rate offer &mdash; all without impact to
+              your credit&nbsp;score.
+            </p>
+            <p style="" class="appl_headline_link">
+              <a
+                href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBjH39S%2BmBXz%2B5jU6CD4rQcQ%3D%3D"
+                class="appl-link"
+                style="color: #0070c9; text-decoration: none"
+                >Learn more about Apple&nbsp;Card
+                <nobr
+                  >and&nbsp;Savings<img
+                    width="8"
+                    alt=""
+                    border="0"
+                    class="more"
+                    style="margin: 0 auto; border: 0"
+                    src="https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/01/27/c3/0127c317-7e3e-d2a9-7f24-3d055fa10d58/mza_9624361562589445119.png/26x26bb-90.png" /></nobr
+              ></a>
+            </p>
+          </div>
+        </div>
+        <div class="appl_pad appl_cat_headline appl_left">
+          <div class="appl_cat_header">
+            <img
+              src="https://is4-ssl.mzstatic.com/image/thumb/Features122/v4/d1/50/01/d1500190-0332-0b91-04c0-26cb2225f257/mza_7671150571800401812.png/728x416bb-90.png"
+              width="364"
+              alt="No annual fees. No late fees. No foreign transaction fees. No processing fees. No hidden fees. No fees ever."
+              align="middle"
+              style="display: block; margin: 0; border: 0"
+            />
+            <p>
+              Other credit cards often charge fees for access to perks you might
+              not even use or that usually come with restrictions. But
+              Apple&nbsp;Card gives you valuable benefits without annual fees.
+              In fact, Apple&nbsp;Card has no fees at&nbsp;all.
+            </p>
+          </div>
+        </div>
+        <div class="appl_100 appl_cat_header_img">
+          <a style="text-decoration: none"
+            ><img
+              width="100%"
+              alt="Card balance on iPhone"
+              class="appl_hero_img1"
+              style="display: block; margin: 0; border: 0"
+              src="https://static-its-images.apple.com/images/applepay/PAY_Firebrand_Email-Gif_UI-Graph_1480x1300.gif"
+          /></a>
+        </div>
+        <div class="appl_pad appl_cat_headline appl_left">
+          <div
+            class="appl_cat_header"
+            style="
+              padding-top: 35px !important;
+              padding-bottom: 30px !important;
+            "
+          >
+            <h2>4.15% APY.<br />High yield. Low&nbsp;effort.</h2>
+            <p>
+              Anytime you make a purchase, you’ll get up to 3% unlimited
+              Daily&nbsp;Cash. That’s real cash you can use right away, send to
+              a friend, or use wherever Apple&nbsp;Pay is accepted when you send
+              Daily&nbsp;Cash to Apple&nbsp;Cash.<sup
+                style="line-height: 0; font-size: 60%"
+                >6</sup
+              >
+              Now, you can also choose to automatically send your
+              Daily&nbsp;Cash to Savings where it’ll grow at 4.15% APY. That’s
+              more than 10x the national average.<sup
+                style="line-height: 0; font-size: 60%"
+                >7</sup
+              >
+              Your Daily&nbsp;Cash gets deposited automatically, and you can add
+              more funds to Savings from a linked bank account, whenever
+              you like.<sup style="line-height: 0; font-size: 60%">8</sup> All
+              it takes is a few steps&nbsp;&mdash; no additional credit checks.
+              And all your account information lives right in&nbsp;Wallet.
+            </p>
+            <p style="" class="appl_headline_link">
+              <a
+                href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBNJLfXn0ivckIQGcTGBNQoQ%3D%3D"
+                class="appl-link"
+                style="color: #0070c9; text-decoration: none"
+                >Learn more about Daily&nbsp;Cash
+                <nobr
+                  >and&nbsp;Savings<img
+                    width="8"
+                    alt=""
+                    border="0"
+                    class="more"
+                    style="margin: 0 auto; border: 0"
+                    src="https://is1-ssl.mzstatic.com/image/thumb/Features124/v4/01/27/c3/0127c317-7e3e-d2a9-7f24-3d055fa10d58/mza_9624361562589445119.png/26x26bb-90.png" /></nobr
+              ></a>
+            </p>
+          </div>
+        </div>
+        <div class="appl_100 appl_cat_header_img">
+          <a style="text-decoration: none"
+            ><img
+              width="100%"
+              alt="Apple lock animation"
+              class="appl_hero_img1"
+              style="display: block; margin: 0; border: 0"
+              src="https://static-its-images.apple.com/images/card/Card_Firebrand_Prospects_Email-Gif_1480x800_Lock.gif"
+          /></a>
+        </div>
+        <div class="appl_pad appl_cat_headline appl_left">
+          <div class="appl_cat_header" style="padding-top: 35px !important">
+            <h2>Your card. Your&nbsp;data. Your&nbsp;business.</h2>
+            <p>
+              Apple takes your privacy and security seriously. It’s not just a
+              philosophy, it’s built into all our products. With advanced
+              security technologies like Face&nbsp;ID, Touch&nbsp;ID, and unique
+              transaction codes, Apple&nbsp;Card is designed to make sure you’re
+              the only one who can use it. And while Goldman Sachs uses your
+              data to operate Apple&nbsp;Card and Savings, your data isn’t sold
+              to third parties for marketing or&nbsp;advertising.
+            </p>
+          </div>
+        </div>
+        <div class="appl_pad appl_cat_headline appl_left">
+          <div class="appl_cat_header">
+            <h2>
+              <a
+                href="https://wallet.apple.com/apple-card/setup/feature/ccs?referrer=cid%3Dapy-110-100638"
+                ><img
+                  src="https://is3-ssl.mzstatic.com/image/thumb/Features114/v4/06/b5/48/06b548ab-6ee2-f384-0012-1db104a4fa5d/mza_2643128171960491529.png/240x240bb-90.png"
+                  width="64"
+                  alt="Wallet app icon"
+                  border="0"
+                  style="padding-bottom: 20px" /></a
+              ><br />Start using Apple&nbsp;Card right&nbsp;away.<sup
+                style="line-height: 0; font-size: 60%"
+                >9</sup
+              >
+            </h2>
+            <p>
+              See your credit limit and interest rate offer for
+              Apple&nbsp;Card&nbsp;&mdash; all without impacting your
+              credit&nbsp;score.
+            </p>
+            <p style="" class="appl_headline_link">
+              <span class="appl_button"
+                ><a
+                  href="https://wallet.apple.com/apple-card/setup/feature/ccs?referrer=cid%3Dapy-110-100638"
+                  class="appl-link"
+                  style="color: #ffffff; text-decoration: none"
+                  >Apply now</a
+                ></span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="appl_pad appl_footer">
+          <div class="appl_social"></div>
+          <p style="text-align: left">
+            1. Accepting an Apple&nbsp;Card after your application is approved
+            will result in a hard inquiry, which may impact your
+            credit&nbsp;score.
+            <br /><br />
+            2. Variable APRs for Apple&nbsp;Card range from 15.99% to 26.99%
+            based on creditworthiness. Rates as of June&nbsp;1,&nbsp;2023. Late
+            or missed payments will result in additional interest accumulating
+            toward your&nbsp;balance.
+            <br /><br />
+            3. You can choose to direct Daily&nbsp;Cash to a Savings account or
+            to an Apple&nbsp;Cash card. If you do not have either set up to
+            receive your Daily&nbsp;Cash, it can be applied as statement credit.
+            Apple&nbsp;Card and Savings accounts are issued or provided by
+            Goldman Sachs Bank USA, Salt Lake City Branch, Member FDIC. The
+            Apple&nbsp;Cash card is issued by Green Dot Bank, Member FDIC.
+            Daily&nbsp;Cash is earned on purchases after the transaction posts
+            to your account. Actual posting times vary by merchant.
+            Daily&nbsp;Cash is subject to exclusions, and additional details
+            apply. See the
+            <a
+              href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBt6%2FA0t5ggzG2%2B4InHoRQtA%3D%3D"
+              style="color: #0070c9; text-decoration: none; white-space: nowrap"
+              >Apple&nbsp;Card Customer&nbsp;Agreement</a
+            >
+            for more&nbsp;information. <br /><br />
+            4. Annual Percentage Yield as of April&nbsp;14,&nbsp;2023. APY may
+            change at any time before or after account is opened. Maximum
+            balance limits&nbsp;apply.
+            <br /><br />
+            5. To access Savings, Apple&nbsp;Card Owners and Co-Owners must open
+            a Savings account. Savings accounts are provided by Goldman Sachs
+            Bank USA, Salt Lake City Branch. Member FDIC. Apple&nbsp;Card Owners
+            and Co-Owners may individually apply for a Savings account and are
+            subject to eligibility requirements. By opening a Savings account,
+            Apple&nbsp;Card Owners and Co-Owners are affirmatively electing to
+            have all future Daily&nbsp;Cash automatically deposited into their
+            respective Savings account. Daily&nbsp;Cash may not be divided
+            between Apple&nbsp;Cash&nbsp;Card and Savings accounts. Owners and
+            Co-Owners may individually change where their Daily&nbsp;Cash is
+            deposited at any time. Savings accounts are not available in
+            American Samoa, Guam, Northern Mariana Islands, or US Minor Outlying
+            Islands. To set up Savings, you must add Apple&nbsp;Card to Wallet
+            on an iPhone or iPad that supports and has the latest version of iOS
+            or&nbsp;iPadOS.
+            <br /><br />
+            6. Apple&nbsp;Cash services are provided by Green Dot Bank, Member
+            FDIC. Learn more about the
+            <a
+              href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBdz5aUHpQscoLiBYDMJZ44A%3D%3D"
+              style="color: #0070c9; text-decoration: none; white-space: nowrap"
+              >Terms and Conditions</a
+            >. Only available in the U.S. on eligible devices. To send and
+            receive money with an Apple&nbsp;Cash account, you must be 18 and a
+            U.S. resident. If you are under 18, your family organizer can set up
+            Apple&nbsp;Cash for you as part of their
+            Apple&nbsp;Cash&nbsp;Family&nbsp;Account. Security checks may
+            require more time to make funds available.
+            Apple&nbsp;Cash&nbsp;Family&nbsp;Accounts can send or receive up to
+            $2000 per transaction or within a seven-day period. Sending money
+            from Wallet requires iOS&nbsp;15.5 or&nbsp;later. <br /><br />
+            7. The national average rate referenced is from the FDIC’s published
+            National Rates and Rate Caps for Savings deposit products, accurate
+            as of 05/15/2023. See the FDIC website
+            <a
+              href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBc89NVCcqJ0lsWrrlBUlvSg%3D%3D"
+              style="color: #0070c9; text-decoration: none; white-space: nowrap"
+              >https://www.fdic.gov/resources/bankers/national-rates/index.html</a
+            >
+            for more information. <br /><br />
+            8. Maximum balance limits apply. See the
+            <a
+              href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBRPdcyZg5J%2BNZeS2j4%2FEusA%3D%3D"
+              style="color: #0070c9; text-decoration: none; white-space: nowrap"
+              >Deposit Account Agreement</a
+            >
+            for more information regarding balance&nbsp;limits.<br /><br />
+            9. Subject to credit&nbsp;approval.
+            <br /><br />
+            To access and use all Apple&nbsp;Card features and products
+            available only to Apple&nbsp;Card users, you must add
+            Apple&nbsp;Card to Wallet on an iPhone or iPad that supports and has
+            the latest version of iOS or iPadOS. Apple&nbsp;Card is subject to
+            credit approval, available only for qualifying applicants in the
+            United States, and issued by Goldman Sachs Bank USA, Salt Lake
+            City&nbsp;Branch.
+            <br /><br />
+            If you reside in the U.S. territories, please call Goldman Sachs at
+            <nobr>877&#8209;255&#8209;5923</nobr> with questions about
+            Apple&nbsp;Card.
+          </p>
+          <p style="text-align: left">
+            All rights reserved. Copyright &copy; 2023 Apple Inc. One Apple Park
+            Way, Cupertino, CA 95014.
+          </p>
+          <div class="appl_lowbrow_1">
+            <a
+              href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBcBEKUn2GQplHK33rhDL18g%3D%3D"
+              class="appl-link"
+              style="
+                color: #555555;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                  'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-size: 11px;
+                line-height: 14px;
+                white-space: nowrap;
+                text-decoration: none;
+              "
+              >Privacy Policy</a
+            >
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a
+              href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBdH94hDQ721s7Qzbxqyt%2BBg%3D%3D"
+              class="appl-link"
+              style="
+                color: #555555;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                  'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-size: 11px;
+                line-height: 14px;
+                white-space: nowrap;
+                text-decoration: none;
+              "
+              >Terms & Conditions</a
+            >
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a
+              href="https://c.apple.com/r?v=2&a=o2CKfLM8dAL7lynfnyn7UGykFIY8WLww60z3wQiT%2F8wtkAoZ2fRpmu3IoHh0Oz9cqO9kFvPIYmGkmcL850hcOsR65kLKWwFBI1oXfTFquX4IoVp1ooEPP1El0NNAWhSSZvnoXt25JpfzxTWBHyHEy10BBSVqj6qGIQoNbMLjN9Fq7oM7q0BhGrD2Uflrzwri3A4ZmohjsI1ZUHtqtoo8JMPwER6dV09pCdDvutCoaP%2BMT8SxnuPu4QPHDXaNWgRBrlW7iftSqjMJbNjAl%2FzgZQ%3D%3D"
+              class="appl-link"
+              style="
+                color: #555555;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                  'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-size: 11px;
+                line-height: 14px;
+                white-space: nowrap;
+                text-decoration: none;
+              "
+              >My Apple ID</a
+            >
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a
+              href="https://c.apple.com/r?v=2&a=8ps6Ok0qKWiF37xoxStPOmTNGs51zlivdjtcXTFjpLnVfNVUW3O2%2Fg0FsgBl8SdvTx20IK997Wb6cow2ElFVnTxkYZkb4z5x75fXqhW9Q%2B4rwo9xMsOlu%2FcjPfp4P1xccu2fxKCfysEsi7mx1yQbWFzRzagL8%2BhrVLpHPuo5l6geR2HB88VcuQQ3MAu0zN42QZoui1sxxWNn5xfa3jo4DD3RiyUQ34jfQ7%2BH3k0uehr5TGHt7JNJS%2FWLPs5EdADBh4KIwQkxQgcPSbitxtrC010kwMwa8sr3jove8vDWYQRRSfQDfBmqBKbVLW41ElJ1mLJM%2BRUsMB7Wq84puxcX5WPMKe862QgKdsCr525kRXWI0BjLNPvvmP9fo2yB8IOQF6noHRCYf%2FQcK42bsOQcPU7ggmrP7EV4qsdXgzkbJihr3DE8tOJ7acCYlg0kH5o%2BcNWSh42GhjWNwvKVvg0IyxCV4Tvt2Z9Ul18Rmvh%2Fkn7LNeRZ2cwFyJcO9Hg4Yq5l"
+              class="appl-link"
+              style="
+                color: #555555;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                  'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-size: 11px;
+                line-height: 14px;
+                white-space: nowrap;
+                text-decoration: none;
+              "
+              >Unsubscribe</a
+            >
+          </div>
+          <div class="appl_lowbrow_2"></div>
+        </div>
+      </div>
+    </div>
+    <!--<![endif]-->
+  </body>
+</html>
